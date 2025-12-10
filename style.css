@@ -1,0 +1,15 @@
+:root{--accent:#1e3a8a}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f5f7fb;color:#0b1220}
+header{background:linear-gradient(90deg,var(--accent),#142554);color:#fff;padding:16px}
+.logo{display:flex;gap:12px;align-items:center;justify-content:center}
+.logo-img{width:56px;height:56px;border-radius:10px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:28px;box-shadow:0 8px 20px rgba(0,0,0,0.12)}
+nav{display:flex;gap:8px;justify-content:center;padding:10px;background:#142554}
+nav a{color:#fff;text-decoration:none;padding:8px 12px;background:rgba(255,255,255,0.06);border-radius:8px}
+.container{max-width:980px;margin:18px auto;padding:0 12px}
+.card{background:#fff;padding:16px;border-radius:10px;margin-bottom:16px;box-shadow:0 6px 18px rgba(20,20,40,0.04)}
+.form input,.form textarea,select{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #e6e9ef}
+.btn{background:var(--accent);color:#fff;padding:10px 14px;border:none;border-radius:8px;cursor:pointer}
+.muted{color:#667085;font-size:14px}
+footer{text-align:center;padding:14px;color:#667085}
+@media(max-width:720px){.logo{flex-direction:column}.container{padding:0 12px}}

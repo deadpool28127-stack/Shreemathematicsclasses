@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shree Mathematics Classes</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-img">Ś</div>
+      <div>
+        <h1>Shree Mathematics Classes</h1>
+        <div class="muted">IX - XII • Competition • Online</div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#admission">Admission</a>
+    <a href="#test">Test Panel</a>
+    <a href="#online">Online Classes</a>
+    <a href="#admin">Admin</a>
+  </nav>
+
+  <main class="container">
+    <section id="admission" class="card">
+      <h2>Admission Form</h2>
+      <p class="muted">Fill details and get confirmation by email (if provided).</p>
+      <div class="form">
+        <input id="name" placeholder="Student name" />
+        <input id="mobile" placeholder="Mobile number" />
+        <input id="email" placeholder="Email (optional)" />
+        <select id="classSelect">
+          <option value="">Select Class</option>
+          <option>Class IX</option>
+          <option>Class X</option>
+          <option>Class XI</option>
+          <option>Class XII</option>
+          <option>Competition</option>
+        </select>
+        <textarea id="address" placeholder="Address"></textarea>
+        <button id="submitAdmission" class="btn">Submit Admission</button>
+        <div id="admissionMsg"></div>
+      </div>
+    </section>
+
+    <section id="test" class="card">
+      <h2>Test Panel</h2>
+      <p class="muted">Take demo tests. Tests are created via admin.</p>
+      <div>
+        <button class="btn" id="loadTestsBtn">Load Tests</button>
+        <div id="testsList"></div>
+        <div id="testArea"></div>
+      </div>
+    </section>
+
+    <section id="online" class="card">
+      <h2>Online Classes</h2>
+      <p class="muted">Join Google Meet links created by admin.</p>
+      <div>
+        <button class="btn" id="loadMeetingsBtn">Load Meetings</button>
+        <div id="meetingsList"></div>
+        <div id="meetArea"></div>
+      </div>
+    </section>
+
+    <section id="admin" class="card">
+      <h2>Admin (Demo)</h2>
+      <p class="muted">Use the default admin to create tests and meetings:</p>
+      <p><code>admin@shree / Shree@123</code></p>
+      <div>
+        <button class="btn" id="viewAdmissionsBtn">View Admissions</button>
+        <button class="btn" id="createTestBtn">Create Demo Test</button>
+        <button class="btn" id="createMeetingBtn">Create Meeting (enter Google Meet link)</button>
+        <div id="adminArea"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Shree Mathematics Classes
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
